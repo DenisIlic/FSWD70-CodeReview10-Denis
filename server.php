@@ -35,7 +35,7 @@ error_reporting(0);
 	$Book_published = $_POST['Book_published'];
 	$Book_publisher = $_POST['Book_publisher'];
 
-	mysqli_query($db, "UPDATE book SET Book_title='$Book_title', Book_desc='$Book_desc', Book_type='$Book_type', Book_author='$Book_author', Book_published='$Book_published', Book_publisher='$Book_publisher' WHERE BookID=$BookID");
+	mysqli_query($db, "UPDATE book SET Book_title='$Book_title', Book_desc='$Book_desc', Book_type='$Book_type', Book_author='$Book_author', Book_published='$Book_published',Book_publisher='$Book_publisher' WHERE BookID=$BookID");
 	$_SESSION['msg'] = "Address updated!"; 
 	header('location: index.php');
 }

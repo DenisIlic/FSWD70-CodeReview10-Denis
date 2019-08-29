@@ -25,9 +25,10 @@ if (isset($_GET['edit'])) {
 <html>
 <head>
 	<title>CRUD: CReate, Update, Delete PHP MySQL</title>
+	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="bg-black">
 
 <?php if (isset($_SESSION['msg'])): ?>
 	<div class="msg">
@@ -38,7 +39,7 @@ if (isset($_GET['edit'])) {
 	</div>
 <?php endif ?>
 
-	<table>
+	<table >
 	<thead>
 		<tr>
 			<th>Title</th>
